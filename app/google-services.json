@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "140274498550",
+    "project_id": "stock-92942",
+    "storage_bucket": "stock-92942.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140274498550:android:9099bbcd74607e86b965d7",
+        "android_client_info": {
+          "package_name": "com.example.stockdivarapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2DB4xRKnzthLeDv2COmwHLcftd5z-oBY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

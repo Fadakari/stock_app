@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>آفلاین</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #1C1C1E;
+            --text-dark: #EAEAEA;
+            --secondary-dark: #9A9A9A;
+            --bg-light: #F8F9FA;
+            --text-light: #212529;
+            --secondary-light: #6c757d;
+            --accent-color: #9B1B30;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-light);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: var(--bg-dark);
+                color: var(--text-dark);
+            }
+        }
+        .container {
+            max-width: 320px;
+            transform: translateY(-20px);
+        }
+        .icon {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 24px;
+            color: #dee2e650;
+        }
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+        p {
+            font-size: 1rem;
+            color: var(--secondary-light);
+            line-height: 1.6;
+            margin-top: 0;
+            margin-bottom: 32px;
+        }
+        @media (prefers-color-scheme: dark) {
+            p {
+                color: var(--secondary-dark);
+            }
+        }
+        .retry-button {
+            background-color: var(--accent-color);
+            color: #FFFFFF;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 32px;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 15px -5px var(--accent-color);
+        }
+        .retry-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px -5px var(--accent-color);
+        }
+        .retry-button:active {
+            transform: translateY(0) scale(0.98);
+            box-shadow: 0 2px 10px -5px var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M10.706 3.994a8.012 8.012 0 0 1 2.188 5.662A8.01 8.01 0 0 1 5.111 15.34a1.185 1.185 0 0 1-1.077.14L2.224 14.03a.5.5 0 0 1 .139-.899l.29-.12a.5.5 0 0 1 .593.125l.22.25a.5.5 0 0 0 .755-.025l.22-.25a.5.5 0 0 1 .593-.125l.29.12a.5.5 0 0 1 .139.899l-1.81 1.437a1.185 1.185 0 0 0-.139.899l.022.001a8.01 8.01 0 0 0 5.816-9.16zM0 3.682A7.963 7.963 0 0 1 2.701.32l.01.002a7.963 7.963 0 0 1 7.95 2.272.99.99 0 0 1-.293 1.348l-1.35 1.012a.99.99 0 0 1-1.182.028A4.963 4.963 0 0 0 5.11 3.522a4.963 4.963 0 0 0-2.8 7.33.99.99 0 0 1-.36 1.258l-1.012 1.35a.99.99 0 0 1-1.348-.293A7.963 7.963 0 0 1 0 3.682z"/>
+        </svg>
+        <h1>اتصال اینترنت برقرار نیست</h1>
+        <p>لطفاً شبکه خود را بررسی کرده و برای بارگذاری مجدد صفحه، دکمه زیر را فشار دهید.</p>
+        <button class="retry-button" onclick="history.go(-1)">تلاش مجدد</button>
+    </div>
+</body>
+</html>
