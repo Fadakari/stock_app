@@ -26,7 +26,6 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            // <<< این خط جدید، بیلد release را به تنظیمات امضای بالا متصل می‌کند >>>
             signingConfig = signingConfigs.getByName("release")
         }
     }
@@ -72,9 +71,7 @@ dependencies {
 
     implementation(platform("com.google.firebase:firebase-bom:33.13.0"))
 
-    // اضافه‌کردن Firebase Analytics (اجباری نیست ولی برای تست خوبه)
     implementation("com.google.firebase:firebase-analytics")
 
-    // اضافه‌کردن Firebase Cloud Messaging (برای ارسال نوتیف)
     implementation("com.google.firebase:firebase-messaging")
 }
