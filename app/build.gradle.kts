@@ -9,16 +9,6 @@ android {
     namespace = "com.example.stockdivarapp"
     compileSdk = 34
 
-    // <<< بخش جدید برای تنظیمات امضا >>>
-    signingConfigs {
-        create("release") {
-            storeFile = file("C:/Users/iTeck/android.keystore")
-            keyAlias = "my-key-alias"
-            // خواندن رمزها از فایل gradle.properties (روش صحیح)
-            storePassword = project.property("RELEASE_STORE_PASSWORD") as String
-            keyPassword = project.property("RELEASE_KEY_PASSWORD") as String
-        }
-    }
 
     defaultConfig {
         applicationId = "com.example.stockdivarapp"
